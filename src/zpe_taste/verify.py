@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 from pathlib import Path
 from typing import Iterable
 
@@ -101,6 +102,27 @@ def read_section(text: str, heading: str) -> str:
     return "\n".join(lines[start:end]).strip()
 
 
+def resolve_authority_commit_sha(repo_root: Path) -> str:
+    validation_path = repo_root / "validation" / "results" / "reference_validation.json"
+    if validation_path.exists():
+        existing = json.loads(validation_path.read_text(encoding="utf-8"))
+        existing_sha = existing.get("authority_commit_sha", "")
+        if existing_sha and existing_sha not in {"PENDING", "UNCOMMITTED"}:
+            return existing_sha
+
+    try:
+        completed = subprocess.run(
+            ["git", "rev-parse", "--short=12", "HEAD"],
+            cwd=repo_root,
+            capture_output=True,
+            check=True,
+            text=True,
+        )
+    except (OSError, subprocess.CalledProcessError):
+        return "UNCOMMITTED"
+    return completed.stdout.strip()
+
+
 def run_checks() -> dict[str, object]:
     repo_root = get_repo_root()
     packet = load_reference_packet()
@@ -145,7 +167,7 @@ def run_checks() -> dict[str, object]:
         ],
         "confidence_percent": 100,
         "commercial_readiness_verdict": "STAGED",
-        "authority_commit_sha": "PENDING",
+        "authority_commit_sha": resolve_authority_commit_sha(repo_root),
         "governing_source": "validation/results/reference_validation.json",
     }
 

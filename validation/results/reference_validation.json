@@ -26,6 +26,6 @@
   ],
   "confidence_percent": 100,
   "commercial_readiness_verdict": "STAGED",
-  "authority_commit_sha": "PENDING",
+  "authority_commit_sha": "c880f9e93585",
   "governing_source": "validation/results/reference_validation.json"
 }

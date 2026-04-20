@@ -26,5 +26,5 @@ This manifest identifies the public reference packet for `zpe-taste`. The packet
 
 ## Review State
 
-- Authority-bearing commit: `PENDING`
+- Authority-bearing commit: `c880f9e93585`
 - Repo readiness: `STAGED`

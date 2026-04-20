@@ -39,7 +39,7 @@ The claim is narrow by design: the current taste lane object is not geometry-bea
 | Field | Value |
 |-------|-------|
 | Verdict | PARTIAL |
-| Commit SHA | PENDING |
+| Commit SHA | d9917f151525 |
 | Confidence | 100% |
 | Source | proofs/artifacts/taste_negative_reference.json |
 

@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: zpe-taste
+message: "If you use this repository, please cite it using the metadata below."
+type: software
+version: 0.1.0
+authors:
+  - family-names: Zer0pa
+repository-code: https://github.com/Zer0pa/zpe-taste
+url: https://github.com/Zer0pa/zpe-taste
+license: LicenseRef-Zer0pa-SAL-6.2
+abstract: >-
+  Evidenced negative reference repository for the current taste lane object.
+  The public claim is narrow: the current taste lane object is not
+  geometry-bearing under the tested evaluation captured here.

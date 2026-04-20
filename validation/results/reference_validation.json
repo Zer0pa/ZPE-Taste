@@ -1,0 +1,31 @@
+{
+  "repo": "zpe-taste",
+  "state_label": "evidenced_negative",
+  "claim": "The current taste lane object is not geometry-bearing under the tested evaluation represented in this repository.",
+  "checks": [
+    {
+      "code": "V_01",
+      "name": "frozen verdict preserved",
+      "verdict": "PASS"
+    },
+    {
+      "code": "V_02",
+      "name": "public surface clean",
+      "verdict": "PASS"
+    },
+    {
+      "code": "V_03",
+      "name": "README contract valid",
+      "verdict": "PASS"
+    },
+    {
+      "code": "V_04",
+      "name": "install and local import path ready",
+      "verdict": "PASS"
+    }
+  ],
+  "confidence_percent": 100,
+  "commercial_readiness_verdict": "STAGED",
+  "authority_commit_sha": "PENDING",
+  "governing_source": "validation/results/reference_validation.json"
+}

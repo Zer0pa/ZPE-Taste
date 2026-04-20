@@ -1,0 +1,52 @@
+{
+  "artifact_version": "zpe-taste-negative-reference-v1",
+  "state_label": "evidenced_negative",
+  "public_statement": {
+    "claim": "The current taste lane object is not geometry-bearing under the tested evaluation represented in this repository.",
+    "non_claims": [
+      "This repository does not claim that biological taste coding is impossible.",
+      "This repository does not settle disputed models of cortical taste organization.",
+      "This repository does not claim that a different native taste object could never support a geometry-bearing representation."
+    ]
+  },
+  "evaluation_panel": {
+    "balanced_event_count": 1600,
+    "ordered_quality_pairs": 25,
+    "intensity_levels": [1, 3, 5, 7],
+    "temporal_pattern_count": 4,
+    "flavor_pattern_count": 4
+  },
+  "best_scores_without_full_identity": {
+    "metric_fit": 0.20663993671059191,
+    "topology_fit": 0.15625,
+    "local_injectivity": 0.25,
+    "graph_fit": 0.18072125813449022
+  },
+  "identity_control_scores": {
+    "metric_fit": 1.0,
+    "topology_fit": 1.0,
+    "local_injectivity": 1.0,
+    "graph_fit": 1.0
+  },
+  "thresholds": {
+    "metric_fit": 0.6,
+    "topology_fit": 0.5,
+    "local_injectivity": 0.5,
+    "graph_fit": 0.5
+  },
+  "replay_controls": {
+    "direct_replay_fidelity": 1.0,
+    "reconstruction_gain_over_direct_decode": 0.0,
+    "dispatch_stability_without_ordering_hacks": 0.2
+  },
+  "interpretation": [
+    "The current taste lane object does not preserve a stable geometry-bearing representation under the tested evaluation once full identity carry-through is removed from the claim surface.",
+    "Exact replay parity does not provide a stronger public claim than direct decode of the same packet fields.",
+    "The strongest positive control depends on preserving full packet identity rather than on a reduced geometric representation."
+  ],
+  "scientific_boundaries": [
+    "This is a bounded result about the current taste lane object.",
+    "This artifact does not prove that biological taste coding is impossible.",
+    "This artifact does not rule out future success with a different native taste object."
+  ]
+}

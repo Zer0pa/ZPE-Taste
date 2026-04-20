@@ -14,8 +14,6 @@ This repository carries a narrow evidenced negative. Contributions should improv
 
 ## Contribution Rules
 
-- Preserve the public claim boundary in `README.md` and `PUBLICATION_BOUNDARY_REPORT.md`.
+- Preserve the public claim boundary in `README.md` and `PUBLIC_AUDIT_LIMITS.md`.
 - Do not add local machine paths, private references, or unpublished research notes.
 - Keep changes atomic and evidence-backed.
-
-By contributing, you agree that your contribution is made under the repository license.

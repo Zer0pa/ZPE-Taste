@@ -4,17 +4,17 @@
 
 | Path | Role |
 |---|---|
-| `src/zpe_taste/` | Lightweight Python package for loading the reference packet and running local validation. |
+| `src/zpe_taste/` | Lightweight Python package for loading the reference packet and running read-only falsification checks. |
 | `proofs/artifacts/` | Machine-readable evidence promoted by the README. |
 | `proofs/manifests/` | Plain-language manifest for the current reference packet. |
-| `validation/results/` | Generated local validation outputs for installation and surface checks. |
+| `PUBLIC_AUDIT_LIMITS.md` | Repository-level scope document for outsider audit boundaries. |
 | `tests/` | Regression checks for claim preservation and surface cleanliness. |
 
 ## Runtime Flow
 
 1. `zpe_taste.reference` loads the committed reference packet and manifest.
-2. `zpe_taste.verify` checks the public surface, README contract, and artifact consistency.
-3. The same validation logic is exercised in `tests/`.
+2. `zpe_taste.verify` checks the public surface, README contract, and artifact consistency without writing tracked outputs.
+3. The same guardrails are exercised in `tests/`.
 
 ## Design Boundaries
 

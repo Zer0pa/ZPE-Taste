@@ -21,12 +21,20 @@ class PublicSurfaceTests(unittest.TestCase):
         paths = [
             repo_root / "proofs" / "artifacts" / "taste_negative_reference.json",
             repo_root / "proofs" / "manifests" / "CURRENT_REFERENCE_PACKET.md",
-            repo_root / "validation" / "results" / "reference_validation.json",
-            repo_root / "PUBLICATION_BOUNDARY_REPORT.md",
+            repo_root / "PUBLIC_AUDIT_LIMITS.md",
+            repo_root / "docs" / "LEGAL_BOUNDARIES.md",
         ]
 
         for path in paths:
             self.assertTrue(path.exists(), f"Missing path: {path.relative_to(repo_root)}")
+
+    def test_removed_surfaces_stay_removed(self) -> None:
+        repo_root = get_repo_root()
+
+        self.assertFalse((repo_root / "LICENSE").exists())
+        self.assertFalse(
+            (repo_root / "validation" / "results" / "reference_validation.json").exists()
+        )
 
 
 if __name__ == "__main__":

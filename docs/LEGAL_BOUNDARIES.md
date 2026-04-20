@@ -1,12 +1,12 @@
 # Legal Boundaries
 
-## License
-
-`zpe-taste` is distributed under the Zer0pa SAL v6.2 license. See `../LICENSE`.
-
 ## Public Scope
 
 This repository publishes a bounded scientific result and the supporting public-safe artifacts required to verify it. It does not publish private process materials or unpublished research history.
+
+## Distribution Handling
+
+This local remediation snapshot does not include a public license file. Licensing and publication operations are intentionally handled outside this repo tree.
 
 ## No Scope Inflation
 

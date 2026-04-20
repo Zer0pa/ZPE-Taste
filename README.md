@@ -38,19 +38,19 @@ The claim is narrow by design: the current taste lane object is not geometry-bea
 
 | Field | Value |
 |-------|-------|
-| Verdict | STAGED |
-| Commit SHA | c880f9e93585 |
+| Verdict | PARTIAL |
+| Commit SHA | PENDING |
 | Confidence | 100% |
-| Source | validation/results/reference_validation.json |
+| Source | proofs/artifacts/taste_negative_reference.json |
 
 ## Tests and Verification
 
 | Code | Check | Verdict |
 |---|---|---|
-| V_01 | Reference packet preserves the frozen negative verdict and non-claims. | PASS |
-| V_02 | Public surface scan blocks local path leakage and keeps links repo-local. | PASS |
-| V_03 | README matches the required heading contract and metric table shape. | PASS |
-| V_04 | `pip install .`, package import, manifest load, and test discovery succeed locally. | PASS |
+| V_01 | Reference packet and manifest preserve the narrow negative and biological non-claim. | PASS |
+| V_02 | README matches the website parser contract and exact heading order. | PASS |
+| V_03 | Scope and boundary documents are present in the tracked tree. | PASS |
+| V_04 | Fresh-clone install and read-only falsification commands run locally. | PASS |
 
 ## Proof Anchors
 
@@ -58,8 +58,8 @@ The claim is narrow by design: the current taste lane object is not geometry-bea
 |---|---|
 | `proofs/artifacts/taste_negative_reference.json` | VERIFIED |
 | `proofs/manifests/CURRENT_REFERENCE_PACKET.md` | VERIFIED |
-| `validation/results/reference_validation.json` | VERIFIED |
-| `PUBLICATION_BOUNDARY_REPORT.md` | VERIFIED |
+| `PUBLIC_AUDIT_LIMITS.md` | VERIFIED |
+| `docs/LEGAL_BOUNDARIES.md` | VERIFIED |
 
 ## Repo Shape
 
@@ -74,8 +74,13 @@ The claim is narrow by design: the current taste lane object is not geometry-bea
 
 ```bash
 python3 -m venv .venv
-source .venv/bin/activate
+. .venv/bin/activate
+python -m pip install --upgrade pip
 pip install .
 python -m zpe_taste.verify
 python -m unittest discover -s tests -v
 ```
+
+### Scope Document
+
+See `PUBLIC_AUDIT_LIMITS.md` for the public audit boundary for this repository.

@@ -7,8 +7,8 @@ This manifest identifies the public reference packet for `zpe-taste`. The packet
 ## Included Anchors
 
 - Machine-readable reference packet: `../artifacts/taste_negative_reference.json`
-- Validation record: `../../validation/results/reference_validation.json`
-- Publication boundary report: `../../PUBLICATION_BOUNDARY_REPORT.md`
+- Public audit limits: `../../PUBLIC_AUDIT_LIMITS.md`
+- Legal boundaries: `../../docs/LEGAL_BOUNDARIES.md`
 
 ## Reference Facts
 
@@ -24,7 +24,7 @@ This manifest identifies the public reference packet for `zpe-taste`. The packet
 - This packet does not claim that biological taste coding is impossible.
 - This packet does not reopen the evaluation beyond the frozen reference evidence packaged here.
 
-## Review State
+## Local Falsification Path
 
-- Authority-bearing commit: `c880f9e93585`
-- Repo readiness: `STAGED`
+- Install and run the commands listed in `../../README.md`.
+- Inspect `../../PUBLIC_AUDIT_LIMITS.md` before making any broader claim from this repository.

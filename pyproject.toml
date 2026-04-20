@@ -8,7 +8,6 @@ version = "0.1.0"
 description = "Evidenced negative reference package for the current taste lane object."
 readme = "README.md"
 requires-python = ">=3.11"
-license = "LicenseRef-Zer0pa-SAL-6.2"
 authors = [
   { name = "Zer0pa" },
 ]

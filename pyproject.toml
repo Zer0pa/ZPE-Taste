@@ -5,6 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "zpe-taste"
 version = "0.1.0"
+license = "LicenseRef-Zer0pa-SAL-7.0"
 description = "Evidenced negative reference package for the current taste lane object."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -21,9 +22,9 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/Zer0pa/zpe-taste"
-Repository = "https://github.com/Zer0pa/zpe-taste"
-Issues = "https://github.com/Zer0pa/zpe-taste/issues"
+Homepage = "https://github.com/Zer0pa/ZPE-Taste"
+Repository = "https://github.com/Zer0pa/ZPE-Taste"
+Issues = "https://github.com/Zer0pa/ZPE-Taste/issues"
 
 [project.scripts]
 zpe-taste-verify = "zpe_taste.verify:main"

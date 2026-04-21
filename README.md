@@ -36,12 +36,12 @@ The claim is narrow by design: the current taste lane object is not geometry-bea
 
 ## Commercial Readiness
 
-This local remediation surface is pending final authority restamp.
+This release candidate is restamped to the verified source commit below.
 
 | Field | Value |
 |-------|-------|
 | Verdict | PARTIAL |
-| Commit SHA | UNSTAMPED |
+| Commit SHA | 900726f407cf |
 | Confidence | 100% |
 | Source | proofs/artifacts/taste_negative_reference.json |
 

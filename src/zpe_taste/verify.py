@@ -123,8 +123,8 @@ def run_checks() -> dict[str, object]:
     if path_findings:
         raise AssertionError(f"Disallowed path patterns found: {path_findings}")
 
-    if (repo_root / "LICENSE").exists():
-        raise AssertionError("Copied license surface is still present in the repo tree.")
+    if not (repo_root / "LICENSE").exists():
+        raise AssertionError("Root license surface is missing from the repo tree.")
 
     if (repo_root / "validation" / "results" / "reference_validation.json").exists():
         raise AssertionError("Tracked generated validation output is still present in the repo tree.")

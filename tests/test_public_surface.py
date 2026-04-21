@@ -31,7 +31,7 @@ class PublicSurfaceTests(unittest.TestCase):
     def test_removed_surfaces_stay_removed(self) -> None:
         repo_root = get_repo_root()
 
-        self.assertFalse((repo_root / "LICENSE").exists())
+        self.assertTrue((repo_root / "LICENSE").exists())
         self.assertFalse(
             (repo_root / "validation" / "results" / "reference_validation.json").exists()
         )

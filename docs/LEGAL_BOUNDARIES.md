@@ -6,7 +6,7 @@ This repository publishes a bounded scientific result and the supporting public-
 
 ## Distribution Handling
 
-This local remediation snapshot does not include a public license file. Licensing and publication operations are intentionally handled outside this repo tree.
+This repo is distributed under `Zer0pa Source-Available License v7.0`. See `LICENSE` at the repo root.
 
 ## No Scope Inflation
 

@@ -36,10 +36,12 @@ The claim is narrow by design: the current taste lane object is not geometry-bea
 
 ## Commercial Readiness
 
+This local remediation surface is pending final authority restamp.
+
 | Field | Value |
 |-------|-------|
 | Verdict | PARTIAL |
-| Commit SHA | d9917f151525 |
+| Commit SHA | UNSTAMPED |
 | Confidence | 100% |
 | Source | proofs/artifacts/taste_negative_reference.json |
 
@@ -83,4 +85,4 @@ python -m unittest discover -s tests -v
 
 ### Scope Document
 
-See `PUBLIC_AUDIT_LIMITS.md` for the public audit boundary for this repository.
+See [`docs/SCOPE.md`](docs/SCOPE.md) for the explicit public claim boundary, and [`PUBLIC_AUDIT_LIMITS.md`](PUBLIC_AUDIT_LIMITS.md) for the outsider audit boundary.

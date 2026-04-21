@@ -16,4 +16,4 @@
 
 - The public claim applies only to the current taste lane object represented in the committed reference packet.
 - This repository does not reopen the science or propose a replacement object.
-- Any broader publication, licensing, or release operations are intentionally handled outside this repo tree.
+- Any broader commercial licensing or release operations beyond this repo surface are intentionally handled outside this repo tree.

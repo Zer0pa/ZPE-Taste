@@ -1,5 +1,7 @@
 # zpe-taste
 
+[![License: SAL v7.0](https://img.shields.io/badge/license-SAL%20v7.0-orange)](https://github.com/Zer0pa/ZPE-Taste/blob/main/LICENSE)
+
 ## What This Is
 
 This repository is the evidenced negative record for the current taste lane object. It is useful now as an auditable reference package that shows what the tested object preserves, where it fails, and which claims remain out of scope.

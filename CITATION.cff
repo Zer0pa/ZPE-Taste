@@ -7,8 +7,14 @@ license: LicenseRef-Zer0pa-SAL-7.0
 authors:
   - name: "Zer0pa (Pty) Ltd"
     email: architects@zer0pa.ai
-repository-code: https://github.com/Zer0pa/zpe-taste
-url: https://github.com/Zer0pa/zpe-taste
+repository-code: https://github.com/Zer0pa/ZPE-Taste
+url: https://github.com/Zer0pa/ZPE-Taste
+keywords:
+  - taste
+  - evidenced negative
+  - scientific reference
+  - reproducibility
+  - geometry evaluation
 abstract: >-
   Evidenced negative reference repository for the current taste lane object.
   The public claim is narrow: the current taste lane object is not

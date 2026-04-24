@@ -8,11 +8,14 @@ version = "0.1.0"
 description = "Evidenced negative reference package for the current taste lane object."
 readme = "README.md"
 requires-python = ">=3.11"
+license = "LicenseRef-Zer0pa-SAL-7.0"
 authors = [
-  { name = "Zer0pa" },
+  { name = "Zer0pa (Pty) Ltd", email = "architects@zer0pa.ai" },
 ]
-keywords = ["taste", "negative result", "reference", "geometry"]
+keywords = ["taste", "evidenced negative", "scientific reference", "reproducibility", "geometry evaluation"]
 classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3 :: Only",
   "Programming Language :: Python :: 3.11",
@@ -21,9 +24,11 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/Zer0pa/zpe-taste"
-Repository = "https://github.com/Zer0pa/zpe-taste"
-Issues = "https://github.com/Zer0pa/zpe-taste/issues"
+Homepage = "https://github.com/Zer0pa/ZPE-Taste"
+Documentation = "https://github.com/Zer0pa/ZPE-Taste/blob/main/README.md"
+Repository = "https://github.com/Zer0pa/ZPE-Taste"
+Issues = "https://github.com/Zer0pa/ZPE-Taste/issues"
+Changelog = "https://github.com/Zer0pa/ZPE-Taste/blob/main/CHANGELOG.md"
 
 [project.scripts]
 zpe-taste-verify = "zpe_taste.verify:main"

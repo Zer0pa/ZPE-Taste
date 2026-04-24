@@ -1,0 +1,25 @@
+{
+  "title": "ZPE-Taste",
+  "description": "This repository is the evidenced negative record for the current taste lane object. The claim is narrow by design: the current taste lane object is not geometry-bearing under the evaluation captured in this repository.",
+  "creators": [
+    {
+      "name": "Zer0pa (Pty) Ltd"
+    }
+  ],
+  "keywords": [
+    "taste",
+    "evidenced negative",
+    "scientific reference",
+    "reproducibility",
+    "geometry evaluation"
+  ],
+  "license": "LicenseRef-Zer0pa-SAL-7.0",
+  "upload_type": "software",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Zer0pa/ZPE-Taste",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

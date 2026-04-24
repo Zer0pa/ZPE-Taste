@@ -1,9 +1,26 @@
 # Security Policy
 
-## Reporting A Vulnerability
+## Supported Scope
 
-If you find a security issue in the package, workflows, or repository automation, report it privately to the maintainer through the project's established private contact route rather than opening a public issue.
+- Source distributions, wheels, and installed package behavior produced from this repository
+- Proof artifacts, metadata, and documentation surfaces committed to this repository
+- GitHub repository configuration and release automation for this repository
 
-## Scope
+Scientific disagreements about the negative finding are not security issues. Use the public evidence-dispute issue template for those.
 
-This policy covers installation, packaging, validation code, and repository automation. Scientific disagreements about the negative finding should go through the public issue tracker using the evidence-dispute template.
+## Reporting
+
+Report vulnerabilities privately to `architects@zer0pa.ai`. Do not open a public issue for an undisclosed vulnerability.
+
+Include, where applicable:
+
+- the affected package version or commit SHA
+- the affected file path or release artifact
+- reproduction steps
+- impact assessment
+
+## Response Targets
+
+- Acknowledgement within 5 business days
+- Initial triage decision within 10 business days
+- Post-triage remediation or coordinated-disclosure timing communicated after validation

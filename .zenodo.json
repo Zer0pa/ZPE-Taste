@@ -1,0 +1,26 @@
+{
+  "title": "ZPE-Taste",
+  "description": "This repository is the evidenced negative record for the current taste lane object. It packages an auditable reference that shows what the tested object preserves, where it fails, and which claims remain out of scope.",
+  "creators": [
+    {
+      "name": "Zer0pa (Pty) Ltd"
+    }
+  ],
+  "keywords": [
+    "taste",
+    "taste-lane",
+    "negative-reference",
+    "geometry-evaluation",
+    "scientific-audit"
+  ],
+  "license": "LicenseRef-Zer0pa-SAL-7.0",
+  "upload_type": "software",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Zer0pa/ZPE-Taste",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ]
+}

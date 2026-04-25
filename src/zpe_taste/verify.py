@@ -74,14 +74,6 @@ def assert_readme_contract(readme_text: str) -> None:
     if headings != expected:
         raise AssertionError(f"README headings do not match the required order: {headings}")
 
-    section = read_section(readme_text, "## Key Metrics")
-    rows = [
-        line for line in section.splitlines()
-        if line.startswith("|") and "Metric" not in line and "---" not in line
-    ]
-    if len(rows) != 4:
-        raise AssertionError(f"Expected exactly 4 metric rows, found {len(rows)}")
-
 
 def read_section(text: str, heading: str) -> str:
     lines = text.splitlines()

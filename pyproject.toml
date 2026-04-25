@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=69"]
+requires = ["setuptools>=77,<82", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Evidenced negative reference package for the current taste lane object."
 readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "LicenseRef-Zer0pa-SAL-7.0" }
+license = "LicenseRef-Zer0pa-SAL-7.0"
 authors = [
   { name = "Zer0pa (Pty) Ltd", email = "architects@zer0pa.ai" },
 ]
@@ -16,7 +16,6 @@ keywords = ["taste", "taste-lane", "negative-reference", "geometry-evaluation", 
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: Science/Research",
-  "License :: Other/Proprietary License",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3 :: Only",
   "Programming Language :: Python :: 3.11",

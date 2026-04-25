@@ -3,7 +3,6 @@
 ## What An Outsider Can Falsify Here
 
 - The committed reference packet and manifest preserve one narrow claim: the current taste lane object is not geometry-bearing under the tested evaluation captured in this repository.
-- The committed proof artifact supports the four promoted metrics in the README.
 - The local package installs from a fresh clone and exposes read-only checks through `python -m zpe_taste.verify` and `python -m unittest discover -s tests -v`.
 
 ## What This Repository Does Not Establish

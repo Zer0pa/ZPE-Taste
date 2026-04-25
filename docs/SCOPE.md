@@ -9,7 +9,7 @@ This repository publishes one narrow claim only:
 ## What Is In Scope
 
 - the committed reference packet
-- the promoted structural-fit metrics in the README
+- the committed proof artifact and manifest
 - the read-only verification commands exposed by the installed package
 - the explicit non-claim that this result does not prove biological taste coding impossible
 

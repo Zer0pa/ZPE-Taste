@@ -43,7 +43,7 @@ This release candidate is restamped to the verified source commit below.
 | Field | Value |
 |-------|-------|
 | Verdict | PARTIAL |
-| Commit SHA | 900726f407cf |
+| Commit SHA | f0df28f89f2f |
 | Confidence | 100% |
 | Source | proofs/artifacts/taste_negative_reference.json |
 

@@ -16,7 +16,6 @@ keywords = ["taste", "taste-lane", "negative-reference", "geometry-evaluation", 
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: Science/Research",
-  "License :: Other/Proprietary License",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3 :: Only",
   "Programming Language :: Python :: 3.11",

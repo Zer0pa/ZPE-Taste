@@ -10,7 +10,20 @@ The public claim is narrow by design: the current taste lane object is not geome
 
 ## Key Metrics
 
-Use `proofs/artifacts/taste_negative_reference.json` for the committed evaluation values and thresholds.
+Evaluation panel: **1,600 balanced events**, 25 ordered quality pairs, 4 intensity levels, 4 temporal patterns, 4 flavor patterns.
+
+Best scores without full identity carry-through (all below pass thresholds — confirming the negative):
+
+| Metric | Best score | Pass threshold | Gap |
+|---|---|---|---|
+| metric\_fit (distance preservation) | 0.207 | 0.6 | −0.393 |
+| topology\_fit (neighborhood preservation) | 0.156 | 0.5 | −0.344 |
+| local\_injectivity | 0.250 | 0.5 | −0.250 |
+| graph\_fit | 0.181 | 0.5 | −0.319 |
+
+Identity control scores: 1.0 across all four metrics (confirming the evaluation machinery discriminates correctly). Reconstruction gain over direct decode: 0.0 (exact replay parity adds no geometric claim strength).
+
+Source: `proofs/artifacts/taste_negative_reference.json` · exercised by CI test `test_reference_packet_preserves_negative_scope` in `tests/test_reference_packet.py`.
 
 ## What We Prove
 

@@ -42,12 +42,7 @@ Source: `proofs/artifacts/taste_negative_reference.json` · exercised by CI test
 
 ## Commercial Readiness
 
-| Field | Value |
-|---|---|
-| Verdict | STAGED |
-| Release posture | Public negative record; evaluation machinery and reference packet are live and CI-verified |
-| Source | `proofs/artifacts/taste_negative_reference.json` |
-| Confidence | Identity control 1.0 confirms discriminating evaluation; lane object negative is preserved across CI |
+This section carries no claim beyond the committed proof anchors and CI checks listed below.
 
 ## Tests and Verification
 
@@ -85,4 +80,6 @@ python -m zpe_taste.verify
 python -m unittest discover -s tests -v
 ```
 
-See [`docs/SCOPE.md`](docs/SCOPE.md) for the explicit public claim boundary and [`PUBLIC_AUDIT_LIMITS.md`](PUBLIC_AUDIT_LIMITS.md) for the outsider audit boundary.
+### Scope Document
+
+See [`docs/SCOPE.md`](docs/SCOPE.md) for the explicit public claim boundary, and [`PUBLIC_AUDIT_LIMITS.md`](PUBLIC_AUDIT_LIMITS.md) for the outsider audit boundary.

@@ -7,7 +7,7 @@
 
 ## Golden-Bundle Hash
 
-This value will be populated by the `receipt-bundle.yml` workflow in Wave 3.
+Not yet populated. A bundle hash will be recorded here once the receipt-bundle workflow is activated for this lane.
 
 ## Verification Command
 

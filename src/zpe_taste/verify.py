@@ -18,6 +18,7 @@ README_REQUIRED_HEADINGS = [
     "## Proof Anchors",
     "## Repo Shape",
     "## Quick Start",
+    "## Upcoming Workstreams",
 ]
 
 

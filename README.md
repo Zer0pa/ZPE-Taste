@@ -83,3 +83,9 @@ python -m unittest discover -s tests -v
 ### Scope Document
 
 See [`docs/SCOPE.md`](docs/SCOPE.md) for the explicit public claim boundary, and [`PUBLIC_AUDIT_LIMITS.md`](PUBLIC_AUDIT_LIMITS.md) for the outsider audit boundary.
+
+## Upcoming Workstreams
+
+This section captures the active lane priorities — what the next agent or contributor picks up, and what investors should expect. Cadence is continuous, not milestoned.
+
+- **Taste lane object — conceptual rethink** — Zero-Base Scientific Thinking — GPD Research and Planning Pending. Current lane object is not geometry-bearing (metric_fit 0.207 vs threshold 0.6, topology_fit 0.156 vs 0.5) — published as falsification. Active rethinking: what is the actual encodable taste object? Receptor-space (parallel to ZPE-Smell), psychophysical-space, or something else? No new engineering until the conceptual model resolves.

@@ -5,30 +5,62 @@
 
 ## What This Is
 
-ZPE-Taste is the public evidence record for the taste lane of the [Zer0pa](https://github.com/Zer0pa) codec portfolio — one of 17 independent encoding lanes, each with its own domain and its own claim boundary.
+Public evidence record for the taste lane. Negative-reference boundary and audit limits define the claim surface.
 
 The finding for this lane is a bounded negative: the current taste lane object is **not geometry-bearing** under the evaluation committed here. Identity controls score 1.0 across all four geometry metrics, confirming the evaluation machinery discriminates correctly before the lane object is tested. The lane object scores well below every pass threshold — that result is what this repository preserves and publishes.
 
 This repository does not claim that biological taste coding is impossible. It claims one narrow thing: the committed object did not pass.
 
+## Codec Mechanics
+
+<p>
+  <img src=".github/assets/readme/lane-mechanics/TASTE.gif" alt="ZPE-Taste Codec Mechanics animation" width="100%">
+</p>
+
+| Field | Value |
+| ------- | ------- |
+| Architecture | TASTE_REFERENCE_STREAM |
+| Encoding | TASTE_NEGATIVE_REFERENCE_V1 |
+| Mechanics Asset | `.github/assets/readme/lane-mechanics/TASTE.gif` |
+
 ## Key Metrics
 
-Evaluation panel: **1,600 balanced events** — 25 ordered quality pairs, 4 intensity levels, 4 temporal patterns, 4 flavor patterns.
+| Metric | Value | Baseline |
+| -------- | ------- | ---------- |
+| metric_fit | 0.207 | 0.6 gate (gap −0.393) |
+| topology_fit | 0.156 | 0.5 gate (gap −0.344) |
+| local_injectivity | 0.250 | 0.5 gate (gap −0.250) |
+| graph_fit | 0.181 | 0.5 gate (gap −0.319) |
 
-Identity control scores: **1.0 across all four metrics** (evaluation machinery confirmed discriminating).
+> Source: `proofs/artifacts/taste_negative_reference.json`
 
-Lane object scores against pass thresholds:
+## Repo Identity
 
-| Metric | Best score | Pass threshold | Gap |
-|---|---|---|---|
-| metric\_fit (distance preservation) | 0.207 | 0.6 | −0.393 |
-| topology\_fit (neighborhood preservation) | 0.156 | 0.5 | −0.344 |
-| local\_injectivity | 0.250 | 0.5 | −0.250 |
-| graph\_fit | 0.181 | 0.5 | −0.319 |
+| Field | Value |
+| ------- | ------- |
+| Identifier | ZPE-Taste |
+| Repository | https://github.com/Zer0pa/ZPE-Taste |
+| Section | encoding |
+| Visibility | PUBLIC |
+| Architecture | TASTE_REFERENCE_STREAM |
+| Encoding | TASTE_NEGATIVE_REFERENCE_V1 |
+| Commit SHA | 900726f407cf |
+| License | SAL-7.0 |
+| Authority Source | proofs/artifacts/taste_negative_reference.json |
 
-Reconstruction gain over direct decode: 0.0 (exact replay parity — no geometric claim strength added by the decode path).
+## Readiness
 
-Source: `proofs/artifacts/taste_negative_reference.json` · exercised by CI test `test_reference_packet_preserves_negative_scope` in `tests/test_reference_packet.py`.
+| Field | Value |
+| ------- | ------- |
+| Verdict | PARTIAL |
+| Checks | 4/4 |
+| Anchors | 4 display anchors |
+| Commit | 900726f407cf |
+| Authority | proofs/artifacts/taste_negative_reference.json |
+
+### Honest Blocker
+
+This repository does not claim that biological taste coding is impossible.; This repository does not settle disputed models of cortical taste organization.; This repository does not claim that a different native taste object could never support a geometry-bearing representation.
 
 ## What We Prove
 
@@ -40,21 +72,19 @@ Source: `proofs/artifacts/taste_negative_reference.json` · exercised by CI test
 - This repository does not claim that biological taste coding is impossible.
 - No comparative benchmarks are published for this lane. This is a no-comp lane by design.
 
-## Commercial Readiness
+## Verification Status
 
-This section carries no claim beyond the committed proof anchors and CI checks listed below.
-
-## Tests and Verification
-
-```bash
-python -m zpe_taste.verify
-python -m unittest discover -s tests -v
-```
+| Code | Check | Verdict |
+| ------ | ------- | --------- |
+| V_01 | Reference packet and manifest preserve the narrow negative verdict and biological non-claim. | PASS |
+| V_02 | Identity control scores 1.0 across all four geometry metrics — evaluation machinery discriminates. | PASS |
+| V_03 | Scope and boundary documents are present in the tracked tree. | PASS |
+| V_04 | Fresh-clone install and read-only falsification commands run locally. | PASS |
 
 ## Proof Anchors
 
 | Path | State |
-|---|---|
+| ------ | ------- |
 | `proofs/artifacts/taste_negative_reference.json` | VERIFIED |
 | `proofs/manifests/CURRENT_REFERENCE_PACKET.md` | VERIFIED |
 | `PUBLIC_AUDIT_LIMITS.md` | VERIFIED |
@@ -62,12 +92,14 @@ python -m unittest discover -s tests -v
 
 ## Repo Shape
 
-| Path | Role |
-|---|---|
-| `proofs/artifacts/taste_negative_reference.json` | Machine-readable authority packet |
-| `proofs/manifests/CURRENT_REFERENCE_PACKET.md` | Plain-language manifest |
-| `src/zpe_taste/` | Read-only loader and verifier |
-| `tests/` | CI regression checks |
+| Field | Value |
+| ------- | ------- |
+| Proof Anchors | 4 display anchors |
+| Modality Lanes | 1 |
+| Architecture | TASTE_REFERENCE_STREAM |
+| Encoding | TASTE_NEGATIVE_REFERENCE_V1 |
+| Verification | 4/4 checks |
+| Authority Source | proofs/artifacts/taste_negative_reference.json |
 
 ## Quick Start
 

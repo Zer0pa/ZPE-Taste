@@ -3,7 +3,7 @@ title: ZPE-Taste
 message: "If you use this repository, please cite it using the metadata below."
 type: software
 version: 0.1.0
-license: LicenseRef-Zer0pa-SAL-7.0
+license: LicenseRef-Zer0pa-SAL-7.1
 authors:
   - name: "Zer0pa (Pty) Ltd"
     email: architects@zer0pa.ai

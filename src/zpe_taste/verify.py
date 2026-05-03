@@ -10,11 +10,13 @@ from .reference import get_repo_root, load_manifest_text, load_reference_packet
 DISALLOWED_PATH_PATTERNS = ("/" + "Users/",)
 README_REQUIRED_HEADINGS = [
     "## What This Is",
+    "## Codec Mechanics",
     "## Key Metrics",
+    "## Repo Identity",
+    "## Readiness",
     "## What We Prove",
     "## What We Don't Claim",
-    "## Commercial Readiness",
-    "## Tests and Verification",
+    "## Verification Status",
     "## Proof Anchors",
     "## Repo Shape",
     "## Quick Start",

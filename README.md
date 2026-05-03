@@ -1,6 +1,6 @@
 # zpe-taste
 
-[![License: SAL v7.0](https://img.shields.io/badge/license-SAL%20v7.0-orange)](https://github.com/Zer0pa/ZPE-Taste/blob/main/LICENSE)
+[![License: SAL v7.1](https://img.shields.io/badge/license-SAL%20v7.0-orange)](https://github.com/Zer0pa/ZPE-Taste/blob/main/LICENSE)
 [![CI](https://github.com/Zer0pa/ZPE-Taste/actions/workflows/ci.yml/badge.svg)](https://github.com/Zer0pa/ZPE-Taste/actions/workflows/ci.yml)
 
 ## What This Is

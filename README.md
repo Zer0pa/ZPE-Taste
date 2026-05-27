@@ -65,7 +65,7 @@ python -m unittest discover -s tests -v
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
-<div><b>03 · VALUE</b></div>
+<div><b>03 · VALUE OF MARKET</b></div>
       <div>$0.75<span>B/yr</span></div>
       <div>NIH BRAIN Initiative funds taste research; what they cannot fund is a vague private failure.</div>
 </td>

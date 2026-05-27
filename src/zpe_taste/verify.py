@@ -22,6 +22,45 @@ README_REQUIRED_HEADINGS = [
     "## Quick Start",
     "## Upcoming Workstreams",
 ]
+README_FRONTDOOR_LABELS = [
+    "00 · ZPE-TASTE",
+    "01 · THE GAP",
+    "02 · MARKETS",
+    "03 · VALUE OF MARKET",
+    "04 · INSIGHT",
+    "05.1 · CURRENT TECH",
+    "05.2 · OUR TECH",
+    "05.3 · BENCHMARKS",
+    "06 · MEASUREMENT",
+    "06.1 ·",
+    "07 · KEY METRICS",
+    "07.1 ·",
+    "07.2 ·",
+    "07.3 ·",
+    "07.4 ·",
+    "07.5 ·",
+    "08 ·",
+    "08.1 ·",
+    "08.2 ·",
+    "09",
+    "09.1 ·",
+    "09.2 ·",
+    "09.3 ·",
+    "09.4",
+    "09.5",
+    "09.6",
+    "09.7",
+    "09.8",
+]
+README_FORBIDDEN_GEOMETRY = (
+    "colspan",
+    '<td width="20%"',
+    '<td width="25',
+    '<td width="41',
+    '<td width="33.33',
+    '<td width="50.0',
+    '<td width="66.67',
+)
 
 
 def iter_public_files(repo_root: Path) -> Iterable[Path]:
@@ -70,6 +109,17 @@ def get_readme_headings(readme_text: str) -> list[str]:
 
 def assert_readme_contract(readme_text: str) -> None:
     headings = get_readme_headings(readme_text)
+    if headings == ["## Install / Developer Commands"]:
+        missing = [label for label in README_FRONTDOOR_LABELS if label not in readme_text]
+        if missing:
+            raise AssertionError(f"README front-door labels missing: {missing}")
+        forbidden = [token for token in README_FORBIDDEN_GEOMETRY if token in readme_text]
+        if forbidden:
+            raise AssertionError(f"README front-door geometry regressed: {forbidden}")
+        if "docs/assets/product-page-mechanics.gif" not in readme_text:
+            raise AssertionError("README front-door mechanics image missing")
+        return
+
     if "## Competitive Benchmarks" in headings:
         expected = README_REQUIRED_HEADINGS[:2] + ["## Competitive Benchmarks"] + README_REQUIRED_HEADINGS[2:]
     else:

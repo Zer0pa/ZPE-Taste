@@ -1,9 +1,6 @@
 # ZPE-Taste
 
-## Install / Developer Commands
-
-<!-- INSTALL-DX:START -->
-#### Package Install
+## Package Install
 
 Installable package: `python3.11 -m pip install zpe-taste`.
 Current release: `0.1.0` on [PyPI](https://pypi.org/project/zpe-taste/).
@@ -13,38 +10,9 @@ Source: [Zer0pa/ZPE-Taste](https://github.com/Zer0pa/ZPE-Taste/).
 python3.11 -m pip install zpe-taste
 ```
 
-Import smoke:
+For full install, smoke, source, and developer commands, [click here](#install-developer-commands-detailed).
 
-```bash
-python3.11 - <<'PY'
-import importlib.metadata as md
-import zpe_taste
-
-print("zpe-taste", md.version("zpe-taste"))
-PY
-```
-
-
-CLI smoke:
-
-```bash
-zpe-taste-verify --help
-```
-
-Install success only proves package acquisition/import. Product scope, stale PyPI state, platform limits, and blockers remain in the front-door sections below.
-- PyPI copy is stale; install success does not change the evidenced-negative result.
-<!-- INSTALL-DX:END -->
-
-#### Quick Start
-
-```bash
-python3 -m venv .venv
-. .venv/bin/activate
-python -m pip install --upgrade pip
-pip install .
-python -m zpe_taste.verify
-python -m unittest discover -s tests -v
-```
+---
 
 <table width="100%">
 <tr>
@@ -317,3 +285,53 @@ python -m unittest discover -s tests -v
 </td>
 </tr>
 </table>
+
+---
+
+<a id="install-developer-commands-detailed"></a>
+
+## Install / Developer Commands Detailed
+
+<!-- INSTALL-DX:START -->
+#### Package Install
+
+Installable package: `python3.11 -m pip install zpe-taste`.
+Current release: `0.1.0` on [PyPI](https://pypi.org/project/zpe-taste/).
+Source: [Zer0pa/ZPE-Taste](https://github.com/Zer0pa/ZPE-Taste/).
+
+```bash
+python3.11 -m pip install zpe-taste
+```
+
+Import smoke:
+
+```bash
+python3.11 - <<'PY'
+import importlib.metadata as md
+import zpe_taste
+
+print("zpe-taste", md.version("zpe-taste"))
+PY
+```
+
+
+CLI smoke:
+
+```bash
+zpe-taste-verify --help
+```
+
+Install success only proves package acquisition/import. Product scope, stale PyPI state, platform limits, and blockers remain in the front-door sections below.
+- PyPI copy is stale; install success does not change the evidenced-negative result.
+<!-- INSTALL-DX:END -->
+
+#### Quick Start
+
+```bash
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install --upgrade pip
+pip install .
+python -m zpe_taste.verify
+python -m unittest discover -s tests -v
+```

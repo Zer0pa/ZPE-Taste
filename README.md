@@ -19,6 +19,7 @@ For full install, smoke, source, and developer commands, [click here](#install-d
 <td width="100%" valign="top">
 <div><span><b>00 · ZPE-TASTE</b> · EVIDENCED NEGATIVE</span> <span>RESEARCH-READY · NEGATIVE RESULT</span></div>
       <h1>Failing at the <span>geometry of taste.</span></h1>
+      <p><strong>Live experiment. Not a release. Ambition headlined. Claims bounded.</strong></p>
       <p>Published null result on a taste-encoding object · ZPE-Taste · PyPI <em>zpe-taste</em> 0.1.0 · github.com/Zer0pa/ZPE-Taste</p>
       <p>A taste object was tested as a geometry-bearing signal. It failed. <em>metric_fit</em> scored <strong>0.207</strong> against a <strong>0.6</strong> threshold, and the three remaining geometry gates also missed. Identity controls returned <strong>1.000</strong>, so the evaluator was working. The committed record holds four numbers, four thresholds, and the read-only commands that reproduce them. The geometry of taste has not been found; the next attempt no longer starts from zero.</p>
 </td>
